@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-css-modules",
+    "stylelint-config-prettier"
+  ],
+  "plugins": [
+    "stylelint-value-no-unknown-custom-properties"
+  ],
+  "rules": {
+    "selector-nested-pattern": "^&",
+    "csstools/value-no-unknown-custom-properties": [true, {
+      "importFrom": [
+        "src/styles/variables.css"
+      ]
+    }]
+  }
+}

@@ -1,0 +1,7 @@
+node_modules
+yarn-error.log
+*.d.ts
+!fileExtensions.d.ts
+.env
+dist
+dev

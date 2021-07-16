@@ -1,0 +1,113 @@
+:root {
+  --dark: #001433;
+  --dark_rgb: 0, 20, 51;
+  --dark-text: #aabbcc;
+  --light: #fafaff;
+  --light_rgb: 250, 250, 255;
+  --light-text: #eeeefc;
+  --purple: #393198;
+  --purple_rgb: 57, 49, 152;
+  --red: #b44556;
+  --red_rgb: 180, 69, 86;
+  --yellow: #bc862b;
+  --yellow_rgb: rgb(188, 134, 43);
+  --green: #569781;
+  --green_rgb: 86, 151, 129;
+  --blue: #2b75b3;
+  --blue_rgb: 43, 117, 179;
+  --indigo: #1c3ca4;
+  --indigo_rgb: 28, 60, 164;
+  --dark-grey: #606a79;
+  --dark-grey_rgb: 96, 106, 121;
+  --mid-grey: #717782;
+  --mid-grey_rgb: 113, 119, 130;
+  --light-grey: #a7b1c1;
+  --light-grey_rgb: 167, 177, 193;
+
+  /* sizing units */
+  --u64: 4rem;
+  --u56: 3.5rem;
+  --u48: 3rem;
+  --u44: 2.75rem;
+  --u40: 2.5rem;
+  --u36: 2.25rem;
+  --u32: 2rem;
+
+  --u30: 1.875rem;
+  --u28: 1.75rem;
+  --u26: 1.625rem;
+  --u24: 1.5rem;
+  --u22: 1.375rem;
+  --u20: 1.25rem;
+  --u18: 1.125rem;
+  --u16: 1rem;
+
+  --u15: 0.9375rem;
+  --u14: 0.875rem;
+  --u13: 0.8125rem;
+  --u12: 0.75rem;
+  --u10: 0.625rem;
+
+  --u9: 0.5625rem;
+  --u8: 0.5rem;
+  --u6: 0.375rem;
+  --u4: 0.25rem;
+  --u3: 0.1875rem;
+  --u2: 0.125rem;
+  --u1: 0.0625rem;
+
+  /* Typography */
+  --sans-serif: 'Assistant', Helvetica, Arial, sans-serif;
+  --monospace: Menlo, Consolas, Monaco, Courier, monospace;
+  --thin: 300;
+  --regular: 400;
+  --semi-bold: 600;
+  --bold: 700;
+
+  /* Dark Theme (default) */
+  --background: var(--dark);
+  --background_rgb: var(--dark_rgb);
+  --bg-inverse: var(--light);
+  --bg-inverse_rgb: var(--light_rgb);
+  --prominent: #8489ff;
+  --prominent_rgb: 149, 154, 255;
+  --neutral: #797feb;
+  --neutral_rgb: 113, 119, 249;
+  --subdued: #585edb;
+  --subdued_rgb: 88, 94, 219;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  color: var(--neutral);
+  font-family: var(--sans-serif);
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-family: inherit;
+}
+
+code,
+pre {
+  font-family: var(--monospace);
+}
+
+/* Light Theme */
+:global(.light-theme) {
+  --background: var(--light);
+  --background_rgb: var(--light_rgb);
+  --bg-inverse: var(--dark);
+  --bg-inverse_rgb: var(--dark_rgb);
+  --prominent: #4f57c8;
+  --prominent_rgb: 79, 87, 200;
+  --neutral: #676bae;
+  --neutral_rgb: 103, 107, 174;
+  --subdued: #7988fa;
+  --subdued_rgb: 121, 136, 250;
+}

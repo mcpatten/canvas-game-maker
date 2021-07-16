@@ -1,0 +1,16 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "tslint.alwaysShowRuleFailuresAsWarnings": false,
+  "tslint.packageManager": "yarn",
+  "eslint.alwaysShowStatus": true,
+  "eslint.packageManager": "yarn",
+  "editor.formatOnSave": true,
+  "stylelint.enable": true,
+  "css.validate": false,
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "emmet.includeLanguages": {
+    "postcss": "css"
+  }
+}
