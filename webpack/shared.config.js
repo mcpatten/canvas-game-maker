@@ -1,44 +1,7 @@
 const path = require('path');
+const CssMinimizer = require('css-minimizer-webpack-plugin');
 
 module.exports = {
-  module: {
-    rules: [
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
-      },
-      {
-        test: /\.(tsx?|jsx?)$/,
-        use: [
-          {
-            loader: 'babel-loader',
-          },
-        ],
-      },
-      {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-modules-typescript-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              modules: true,
-              importLoaders: 1,
-            },
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              postcssOptions: {
-                ident: 'postcss'
-              },
-            },
-          },
-        ],
-      },
-    ],
-  },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
     alias: {
@@ -56,5 +19,6 @@ module.exports = {
     splitChunks: {
       chunks: 'all',
     },
+    minimizer: [new CssMinimizer(), '...'],
   },
 };
